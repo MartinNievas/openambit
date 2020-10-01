@@ -1,1 +1,1 @@
-docker run --rm -v $PWD:/code -u $(id -u) --env BUILD_DIR=tmp --env CMAKE_OPTS="-DBUILD_EXTRAS=0" --env MAKE_OPTS=-k totto:openambit
+docker run --rm -v /home/snow/repos/openambit:/code -u $(id -u) --env CMAKE_OPTS=-DBUILD_EXTRAS=1 openambit:stretch
