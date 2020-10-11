@@ -14,4 +14,4 @@ case "$application" in
     ;;
 esac
 
-docker run --rm -v /home/snow/repos/openambit:/code --device=/dev/hidraw4 openambit:stretch /code/_build/src/${builddir} ${options}
+docker run --rm -v "$PWD":/code --device=/dev/hidraw4 openambit:stretch /code/_build/src/${builddir} ${options}
