@@ -4,6 +4,7 @@ set -eu
 
 SOURCE_LOCATION="`dirname \"$0\"`"
 SOURCE_LOCATION="`( cd \"${SOURCE_LOCATION}\" && pwd )`"
+DO_INSTALL=0
 
 CORES=1
 if [ -r /proc/cpuinfo ]; then
